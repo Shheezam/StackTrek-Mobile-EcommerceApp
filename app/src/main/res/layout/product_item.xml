@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="25dp"
+    android:backgroundTint="#e5a672"
+    app:cardCornerRadius="10dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    app:cardElevation="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#27445C"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textStyle="italic"
+        android:textSize="25sp"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#27445C"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="italic"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/ic_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/mktea" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_product_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View Details"
+            android:fontFamily="casual"
+
+            android:textColor="@color/white"
+            android:backgroundTint="#27445C"/>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
